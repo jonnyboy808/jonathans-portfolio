@@ -1,0 +1,27 @@
+:root {
+    --theme: blueviolet;
+}
+
+header {
+    padding: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--theme);
+    color: white;
+}
+
+nav {
+    background-color: var(--theme);
+    display: inline-block;
+    float: right;
+    font-size: 20px;
+    text-align: left;
+}
+
+h2 {
+    border: 2px solid;
+    text-align: center;
+    margin: 40px;
+    position:absolute;
+    bottom: 25px;
+}
+
