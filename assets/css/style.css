@@ -3,18 +3,26 @@
 }
 
 header {
-    padding: 20px;
+    display: flex;
+    padding: 10px 25px;
+    border-width: 10px;
+    align-items: end;
+    justify-content: space-between;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--theme);
     color: white;
 }
 
-nav {
-    background-color: var(--theme);
-    display: inline-block;
-    float: right;
-    font-size: 20px;
-    text-align: left;
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    list-style: none;
+}
+
+nav a {
+    color: greenyellow;
+    text-decoration: overline;
 }
 
 h2 {
