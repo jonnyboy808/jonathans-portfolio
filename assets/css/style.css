@@ -45,6 +45,10 @@ h2 {
     position:relative;
 }
 
+h3 li {
+
+}
+
 p {
     font-style: normal;
 }
@@ -57,6 +61,17 @@ p {
     margin-left: 10px;
     min-width: 400px;
 }
+
+.contact {
+        flex: 1 0 0;
+        width: 75%;
+        padding: 10px;
+        border-style: dashed;
+        border-width: 1px;
+        margin-left: 10px;
+        min-width: 400px;
+        
+    }
 
 @media screen and (max-width: 992px) {
     .card {
