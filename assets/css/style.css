@@ -53,12 +53,22 @@ h3 li {
 
 p {
     font-style: normal;
+    margin: 20px;
 }
 
-aside {
-    position: relative;
-    left: 50px;
-    border-style: dashed;
+.personal-img {
+    flex: 1;
+    padding: 10px;
+
+}
+
+.box-right {
+    flex: 2;
+    justify-content: right;
+    display: flex;
+    padding: 10px;
+    background-color: rgb(25, 54, 78);
+   
 
 
 }
@@ -85,14 +95,16 @@ aside {
 
 @media screen and (max-width: 992px) {
     .card,
-    nav ul {
-      flex-direction:initial;
+    nav ul,
+    aside {
+      flex-direction:column;
     }
   }
   
   @media screen and (max-width: 768px) {
     .card,
-    nav ul {
+    nav ul,
+    aside {
       flex-direction: column;
     }
   }
