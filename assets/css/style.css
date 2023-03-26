@@ -47,7 +47,10 @@ h2 {
     position:relative;
 }
 
-h3 li {
+h3 {
+    text-align: center;
+    margin-top: 20px;
+    position:relative;
 
 }
 
@@ -93,10 +96,28 @@ p {
         
     }
 
+footer {
+    margin-top: 10px;
+    padding: 10px 45px 10px 55px;
+    
+    background-color: var(--theme);
+    color: var(--default);
+}    
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 300px;
+    list-style: none;
+}    
+    
+
+
 @media screen and (max-width: 992px) {
     .card,
     nav ul,
-    aside {
+    aside, {
       flex-direction:column;
     }
   }
@@ -104,7 +125,7 @@ p {
   @media screen and (max-width: 768px) {
     .card,
     nav ul,
-    aside {
+    aside, {
       flex-direction: column;
     }
   }
