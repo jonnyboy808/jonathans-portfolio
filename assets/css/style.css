@@ -6,6 +6,8 @@
 :root {
     --theme: blueviolet;
     --default: white;
+    --theme-dark:  rgb(25, 54, 78);
+
 }
 
 body {
@@ -25,6 +27,16 @@ header {
     justify-content: space-between;
     background-color: var(--theme);
     color: var(--default);
+}
+
+main footer {
+    display: flex;
+    padding: 10px 45px 10px 55px;
+    align-items:center;
+    justify-content: space-between;
+    background-color: var(--theme-dark);
+    color: whitesmoke;
+
 }
 
 nav ul {
@@ -81,18 +93,20 @@ p {
     padding: 10px;
     border-style: dashed;
     border-width: 1px;
-    margin-left: 10px;
-    min-width: 400px;
+    margin-left: 20px;
+    min-width: 600px;
 }
 
-.contact {
-        flex: 1 0 0;
+.work-done {
+        flex: 4;
+        display: flex;
+        flex-wrap: wrap;
         width: 75%;
         padding: 10px;
-        border-style: dashed;
+        border-style: solid;
         border-width: 1px;
-        margin-left: 10px;
-        min-width: 400px;
+        margin-left: 20px;
+        justify-content: center;
         
     }
 
@@ -111,11 +125,9 @@ footer ul {
     min-width: 300px;
     list-style: none;
 }    
-    
-
 
 @media screen and (max-width: 992px) {
-    .card,
+    main,
     nav ul,
     aside, {
       flex-direction:column;
@@ -123,9 +135,8 @@ footer ul {
   }
   
   @media screen and (max-width: 768px) {
-    .card,
-    nav ul,
-    aside, {
+    main,
+    nav ul, {
       flex-direction: column;
     }
   }
