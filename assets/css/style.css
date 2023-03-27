@@ -20,6 +20,7 @@ main {
     margin-top: 2%;
 }
 
+
 header {
     display: flex;
     padding: 10px 45px 10px 55px;
@@ -29,7 +30,7 @@ header {
     color: var(--default);
 }
 
-main footer {
+div footer {
     flex: 4;
     margin-top: -4px;
     padding: 10px;
@@ -74,22 +75,42 @@ p {
     margin: 20px;
 }
 
-.personal-img {
-    flex: 1;
+article img {
+    flex: 1 1;
     padding: 15px;
     margin-left: 55px;
     display: inline-block;
+    width: 50%;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50px;
+
 
 }
 
-.box-right {
-    margin-top: 150px;
-    border-bottom: 10px;
-    float: right;
+article {
+    justify-content: center;
     display: flex;
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: 50% 40%;
+}
+
+.box-right {
+    float: right;
+    justify-content: center;
     
-    padding: 10px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    
+    
     background-color: var(--theme-dark);
+}
+
+.box-right p {
+    flex-wrap: wrap;
+    display: flex;
 }
 
 .examples {
@@ -111,7 +132,7 @@ p {
     flex: 0 0 400px;
 }
 
-main img {
+div img {
     max-width: 400px;
     min-height: 250px;
 }
@@ -151,7 +172,7 @@ footer ul {
   
   @media screen and (max-width: 768px) {
     main,
-    nav ul, {
+     {
       flex-direction: column;
     }
   }
