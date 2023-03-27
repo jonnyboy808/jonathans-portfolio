@@ -116,6 +116,14 @@ main img {
     min-height: 250px;
 }
 
+.card :hover{
+    opacity: 45%;
+}
+
+nav ul :hover{
+    opacity: 65%;
+    color: yellow;
+}
 
 footer {
     margin-top: 10px;
