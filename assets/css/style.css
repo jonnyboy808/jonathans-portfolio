@@ -181,3 +181,13 @@ footer ul :hover{
       justify-content: center;
     }
   }
+
+  @media only screen and (max-width: 500px) {
+    footer,
+    footer ul {
+        align-content: left;
+        justify-content: space-between;
+        min-width: 100px;
+       
+    }
+  }
