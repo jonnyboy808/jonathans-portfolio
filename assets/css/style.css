@@ -175,3 +175,9 @@ footer ul :hover{
     opacity: 65%;
     color: yellow;
 }
+
+@media only screen and (max-width: 779px) {
+    header {
+      justify-content: center;
+    }
+  }
