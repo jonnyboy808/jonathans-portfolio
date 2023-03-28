@@ -14,7 +14,7 @@ body {
     background-color: rgba(11, 57, 65, 0.858);
 }
 
-main {
+div {
     display: flex;
     flex-wrap: wrap;
     margin-top: 2%;
@@ -23,6 +23,7 @@ main {
 
 header {
     display: flex;
+    flex-wrap: wrap;
     padding: 10px 45px 10px 55px;
     align-items:center;
     justify-content: space-between;
@@ -38,7 +39,7 @@ div footer {
     flex-wrap: wrap;
     justify-content: center;
     background-color: var(--theme);
-    color: whitesmoke;
+    color: var(--default);
 }
 
 
@@ -48,19 +49,18 @@ nav ul {
     justify-content: space-between;
     min-width: 300px;
     list-style: none;
+    
 }
 
 nav a {
-    display: flex;
-    color: var(--default);
     text-decoration: overline;
 }
 
 h3 {
     text-align: center;
-    margin-top: 175px;
-    position:relative;
-    text-decoration: underline;
+    justify-content: center;
+    padding: 55px;
+
 }
 
 h4 {
@@ -72,7 +72,7 @@ h4 {
 
 p {
     font-style: normal;
-    margin: 20px;
+    margin: 30px;
 }
 
 article img {
@@ -99,12 +99,10 @@ article {
 .box-right {
     float: right;
     justify-content: center;
-    
-    
+    border-radius: 50px;
     display: flex;
     flex-wrap: wrap;
-    
-    
+    margin-top: 10px;
     background-color: var(--theme-dark);
 }
 
@@ -127,9 +125,20 @@ article {
     flex: 1 0 0;
     width: 50%;
     padding: 45px;
-    margin-left: 50px;
-    margin-right: 50px;
     flex: 0 0 400px;
+    ;
+}
+
+.card-1 {
+    flex: 2 0 0;
+    width: 50%;
+    padding: 1px;
+    margin: 100px;
+    flex: 0 0 300px;
+    border-style: solid;
+    border-width: 5px;
+    background-color: blueviolet;
+    border-color: var(--default);
 }
 
 div img {
@@ -163,15 +172,14 @@ footer ul {
 }    
 
 @media screen and (max-width: 992px) {
-    main,
-    nav ul,
-    aside, {
+    div,
+    , {
       flex-direction:column;
     }
   }
   
   @media screen and (max-width: 768px) {
-    main,
+    div,
      {
       flex-direction: column;
     }
