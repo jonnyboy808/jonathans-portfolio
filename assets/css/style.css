@@ -53,11 +53,7 @@ nav a {
     text-decoration: overline;
 }
 
-h3 {
-    text-align: center;
-    justify-content: center;
-    padding: 75px;
-}
+
 
 h4 {
     text-align: center;
@@ -72,10 +68,10 @@ p {
 
 article img {
     width: 60%;
-    padding: 1px;
     margin: 100px;
-    max-width: 400px;
     flex: 0 0 300px;
+    min-width: 300px;
+    max-width: 300px;
     border-style: solid;
     border-width: 5px;
     border-radius: 50px;
@@ -84,7 +80,7 @@ article img {
 }
 
 .box-right {
-    width: 70%;
+    width: 60%;
     padding: 20px;
     margin: 100px;
     flex: 0 0 300px;
@@ -96,7 +92,6 @@ article img {
 
 article {
     flex: 1;
-    padding: 2px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; 
@@ -112,24 +107,28 @@ article {
 }
     
 .card {
-    width: 50%;
-    padding: 1px;
-    margin: 100px;
-    flex: 0 0 300px;
+    flex: 0 0 200px;
+    padding: 25px;
     border-style: solid;
     border-width: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
     background-color: blueviolet;
     border-color: var(--default);
 }
 
 .card-1 {
-    width: 50%;
+    width: 45%;
     padding: 45px;
     flex: 0 0 400px;
 }
 
 .card-2 {
-    width: 50%;
+    width: 45%;
     padding: 45px;
     flex: 0 0 300px;
 }
@@ -158,9 +157,11 @@ nav ul :hover{
 
 footer {
     margin-top: 10px;
+    text-align: center;
     padding: 10px 45px 10px 55px;
     background-color: var(--theme);
     color: var(--default);
+    
 }    
 
 footer ul {
