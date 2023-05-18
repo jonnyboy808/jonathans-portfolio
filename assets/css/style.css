@@ -44,6 +44,7 @@ div footer {
 nav ul {
     display: flex;
     flex-wrap: wrap;
+    padding-right: 45px;
     justify-content: space-between;
     min-width: 300px;
     list-style: none;   
@@ -159,7 +160,7 @@ nav ul :hover{
 footer {
     margin-top: 10px;
     text-align: center;
-    padding: 10px 45px 10px 55px;
+    padding: 10px 45px 10px 40px;
     background-color: var(--theme);
     color: var(--default);
     
@@ -168,6 +169,7 @@ footer {
 footer ul {
     display: flex;
     flex-wrap: wrap;
+    padding-right: 45px;
     justify-content: space-between;
     min-width: 300px;
     list-style: none;
